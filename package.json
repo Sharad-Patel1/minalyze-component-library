@@ -1,15 +1,10 @@
 {
-  "name": "@minalyze_ab/minalyze-component-library",
+  "name": "minalyze-component-library",
   "version": "0.1.1",
-  "main": "dist/minalyze-component-library.common.js",
-  "module": "dist/minalyze-component-library.umd.min.js",
-  "files": [
-    "dist"
-  ],
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "npm run build:lib && npm run build:style",
+    "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name minalyze-component-library src/index.js",
     "build:style": "postcss src/tailwind.css -o dist/style.css",
     "lint": "vue-cli-service lint"
@@ -53,11 +48,6 @@
     "not dead",
     "not ie 11"
   ],
-  "description": "## Project setup ``` npm install ```",
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.com/minalyze/minalyze-component-library/-/tree/main/src/components"
-  },
   "keywords": [
     "mcl"
   ],
