@@ -1,0 +1,66 @@
+{
+  "name": "@minalyze_ab/minalyze-component-library",
+  "version": "0.1.1",
+  "main": "dist/minalyze-component-library.common.js",
+  "module": "dist/minalyze-component-library.umd.min.js",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build:lib && npm run build:style",
+    "build:lib": "vue-cli-service build --target lib --name minalyze-component-library src/index.js",
+    "build:style": "postcss src/tailwind.css -o dist/style.css",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.13",
+    "@heroicons/vue": "^2.0.18",
+    "core-js": "^3.8.3",
+    "vue": "^3.2.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "autoprefixer": "^10.4.14",
+    "class-variance-authority": "^0.6.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/minalyze/minalyze-component-library/-/tree/main/src/components"
+  },
+  "keywords": [
+    "mcl"
+  ],
+  "author": "Sharad Patel",
+  "license": "ISC"
+}
